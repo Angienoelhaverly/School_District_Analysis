@@ -10,7 +10,7 @@ The district summary is actually not affected much by the changes of replacing 9
 ### Refactored District Summary
 ![DS Updated](https://user-images.githubusercontent.com/73972332/102041632-d09f2480-3d84-11eb-88d3-dc60716dbb1c.png)
 ## How is the school summary affected?
-The school summary dataframe is affected in that after removing the false/altered data from the calculations, the scores drop overall for Thomas High School. When the falsified data was included, the scores were much higher for the percentage of those passing math, reading, and overall. When the data is excluded, the passing scores drop from the mid 90's to the mid 60's. This makes sense, given that the falsified/innacurate data would reflect a higher score overall and that the general scores would drop when the data is not counted. See the differences below in the two graphs (one for the original, and one that is filtered). 
+The school summary dataframe is affected in that after removing the false/altered data from the calculations, the scores drop overall for Thomas High School. When the falsified data was included, the scores were much higher for the percentage of those passing math, reading, and overall. When the data is excluded, the passing scores drop from the mid 90's to the mid 60's. This makes sense, given that the falsified/innacurate data would reflect a higher score overall and that the general scores would drop when the data is not counted. See the differences below in the two graphs (one for the original, and one that is filtered). This data is different because we have replaced the 9th grade reading and math scores at Thomas High School with NaN in the beginning of this analysis. 
 ### Original Per School Summary
 ![Per School Summary Original](https://user-images.githubusercontent.com/73972332/102043045-45279280-3d88-11eb-9e88-dcac11df71f9.png)
 ### Refactored Per School Summary
@@ -48,11 +48,12 @@ In this next section, we again see the same type of outcome that we saw in the p
 ![scores school type updated](https://user-images.githubusercontent.com/73972332/102050805-51b3e700-3d98-11eb-8f80-a07f22f29640.png)
 # Summary
 ## Summary of 4 Major Changes in Updated DataFrame
-Four major changes to the school district analysis after reading and math scores have been replaced are: 
-  1) that the grades % increased for Thomas High School so it went from a low performing to a high performing school
-  2) the % Passing Math Scores for Thomas High School returned back up to 93 from 66.9 
-  3) the % Passing Reading returned back up to 97 from 69.6 
-  4) the overall percentage of the passing returned back up to 90 from 65. 
+Major changes to the school district analysis after reading and math scores have been replaced are: 
+  1) The first replacement of the 9th grade values with Nan bring down all the scores from Thomas High School across the board. But then, at the end of our code, we replace the      school summary code with code that only counts the 10th-12th grade passing data. This brings our data back up. In our final dataframe therefore: 
+  2) the grades % increased for Thomas High School so it went from a low performing to a high performing school
+  3) the % Passing Math Scores for Thomas High School returned back up to 93 from 66.9 
+  4) the % Passing Reading returned back up to 97 from 69.6 
+  5) the overall percentage of the passing returned back up to 90 from 65. 
 #### Before replacing the math & reading scores
 ![Per School Summary Updated 2](https://user-images.githubusercontent.com/73972332/102052895-b886cf80-3d9b-11eb-973f-9d447b3749b8.png)
 #### After replacing the math & reading scores
