@@ -10,6 +10,11 @@ The district summary is actually not affected much by the changes of replacing 9
 ### Refactored District Summary
 ![DS Updated](https://user-images.githubusercontent.com/73972332/102041632-d09f2480-3d84-11eb-88d3-dc60716dbb1c.png)
 ## How is the school summary affected?
+The school summary dataframe is affected in that after removing the false/altered data from the calculations, the scores drop overall for Thomas High School. When the falsified data was included, the scores were much higher for the percentage of those passing math, reading, and overall. When the data is excluded, the passing scores drop from the mid 90's to the mid 60's. This makes sense, given that the falsified/innacurate data would reflect a higher score overall and that the general scores would drop when the data is not counted. See the differences below in the two graphs (one for the original, and one that is filtered). 
+### Original Per School Summary
+![Per School Summary Original](https://user-images.githubusercontent.com/73972332/102043045-45279280-3d88-11eb-9e88-dcac11df71f9.png)
+### Refactored Per School Summary
+![Per School Summary Updated](https://user-images.githubusercontent.com/73972332/102043065-4f499100-3d88-11eb-9c9f-46e6e04694f4.png)
 ## How does replacing the ninth graders’ math and reading scores affect Thomas High School’s performance relative to the other schools?
 ## How does replacing the ninth-grade scores affect the following: 
 ### Math and reading scores by grade
