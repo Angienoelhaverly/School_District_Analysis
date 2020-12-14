@@ -43,6 +43,7 @@ When we view the dataframes for scores by school size, we encounter the same phe
 #### Scores by School Size Updated
 ![scores school size updated](https://user-images.githubusercontent.com/73972332/102050008-d56cd400-3d96-11eb-86f3-ae2e1000c152.png)
 ### Scores by school type
-
+In this next section, we again see the same type of outcome that we saw in the previous two sections. The data remains unchanged in the scores by school type because again, we have eliminated the 9th grade null data, and replaced our datasets with only the passing grade info from 10th to 12th grade. If we left the dataset as affected by the null values, we would see a change in the scores, however at the end of the challenge code, we replaced this lower data, with info that shows just from the 10th-12th grades, which bring our scores back to the same as they were originally. 
+![scores school type updated](https://user-images.githubusercontent.com/73972332/102050805-51b3e700-3d98-11eb-8f80-a07f22f29640.png)
 # Summary
 ## Summary of 4 Major Changes in Updated DataFrame
