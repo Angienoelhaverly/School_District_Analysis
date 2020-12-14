@@ -52,4 +52,4 @@ Four major changes to the school district analysis after reading and math scores
 #### Before replacing the math & reading scores
 ![Per School Summary Updated 2](https://user-images.githubusercontent.com/73972332/102052895-b886cf80-3d9b-11eb-973f-9d447b3749b8.png)
 #### After replacing the math & reading scores
-
+![Replacing math reading](https://user-images.githubusercontent.com/73972332/102053149-1b786680-3d9c-11eb-8c94-b41e1cda0c6a.png)
