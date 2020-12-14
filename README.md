@@ -16,6 +16,11 @@ The school summary dataframe is affected in that after removing the false/altere
 ### Refactored Per School Summary
 ![Per School Summary Updated](https://user-images.githubusercontent.com/73972332/102043065-4f499100-3d88-11eb-9c9f-46e6e04694f4.png)
 ## How does replacing the ninth graders’ math and reading scores affect Thomas High School’s performance relative to the other schools?
+Replacing the ninth graders' math and reading scores with Nan values clearly affects Thomas High School's performance relative to the other schools by showing that Thoma High School's freshmen are relatively struggling. The scores drop clearly when the innacurate data is excluded. For example, in the original code, when we sorted by top 5 schools, Thomas High School actually came in rated second. However, when substituting Nan for the inaccurate values, Thomas High School's % overall passing drops down around 65%, bringing it's standing compared to the other schools, much lower. 
+### Original Top Performing Schools
+![sorted top 5 1](https://user-images.githubusercontent.com/73972332/102043729-0eeb1280-3d8a-11eb-9001-1564e215eba2.png)
+### Thomas High School's % Passing after Excluding False Data
+![Per School Summary Updated 3](https://user-images.githubusercontent.com/73972332/102043918-959fef80-3d8a-11eb-96d1-798c05ade94c.png)
 ## How does replacing the ninth-grade scores affect the following: 
 ### Math and reading scores by grade
 ### Scores by school spending
