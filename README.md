@@ -32,7 +32,16 @@ Replacing the ninth-graders scores affects the math and reading scores by grade 
 ![Reading Grade Updated](https://user-images.githubusercontent.com/73972332/102044523-d0565780-3d8b-11eb-967a-6c3fbf46ca2b.png)
 ### Scores by school spending
 Replacing the ninth-graders scores does not actually affect the scores by schools spending because by the time we run this code, we will have replaced the overall Thomas High School passing scores in the dataframe with data for only the 10th through 12th grade and will not even count the ninth graders data in this analysis. So the scores by school spending dataframe remains unchanged. If we had caclulated this data before updating the frame to only show for 10th through 12th, the school spend per student would be much higher. I noticed in this code, that our challenge didn't ask us to update the dataframe for total students at Thomas High School to show as only 1,173 (1635 - 461 ninth graders). If the code had asked us to update our dataframe for total students from Thomas High School to be only 1,173 (10th Grade to 12th Grade Only), then the total spend per student would be much higher at $889.28 and would bump this school way up on the spending range per student. 
+#### Scores by School Spending Original
+![Schools Spending Original](https://user-images.githubusercontent.com/73972332/102049698-3cd65400-3d96-11eb-8211-159624bfd1c3.png)
+#### Scores by School Spending Updated
+![Schools Spending Updated](https://user-images.githubusercontent.com/73972332/102049718-43fd6200-3d96-11eb-932d-8c74eda1347d.png)
 ### Scores by school size
+When we view the dataframes for scores by school size, we encounter the same phenomenon as we did in the last section (scores by spending), in that the data remains relatively unchanged from the first dataframe to the second, because we eliminated the ninth grader information from the average and passing scores, but the challenge code never asked us to update the total student number. For this reason, and because the 10th-12th graders had relatively the same scores as was counted in the original code with the inaccurate data of the 9th graders, we can see that there is really no difference of output below. Also the school size (even if we subtract the amount of 9th grader students), remains in the Medium Range(1,000 - 2,000). 
+#### Scores by School Size Original
+![scores school size original](https://user-images.githubusercontent.com/73972332/102049992-cede5c80-3d96-11eb-8452-a102a78a50a2.png)
+#### Scores by School Size Updated
+![scores school size updated](https://user-images.githubusercontent.com/73972332/102050008-d56cd400-3d96-11eb-86f3-ae2e1000c152.png)
 ### Scores by school type
 
 # Summary
