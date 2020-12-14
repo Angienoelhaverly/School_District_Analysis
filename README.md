@@ -5,8 +5,9 @@ The purpose of this project is to conduct a school district analysis using Anaco
 # Results
 ## How is the district summary affected?
 The district summary is actually not affected much by the changes of replacing 9th grade Thomas High School Student Data with Nan because the District Summary DataFrame is not analyzing only data per student, but also analyzing data by overall school information such as total schools, total students, and total budget. The numbers that look at Average Scores, Passing Scores, and Overall Passing Scores are only slightly different in total. Changes between the original and updated can be found below. 
+### Original District Summary
 ![DS Original](https://user-images.githubusercontent.com/73972332/102035199-a9d8f200-3d74-11eb-8d20-82d0dbb06cc6.png)
-
+### Refactored District Summary
 
 ## How is the school summary affected?
 ## How does replacing the ninth graders’ math and reading scores affect Thomas High School’s performance relative to the other schools?
