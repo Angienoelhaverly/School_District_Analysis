@@ -23,6 +23,11 @@ Replacing the ninth graders' math and reading scores with Nan values clearly aff
 ![Per School Summary Updated 3](https://user-images.githubusercontent.com/73972332/102043918-959fef80-3d8a-11eb-96d1-798c05ade94c.png)
 ## How does replacing the ninth-grade scores affect the following: 
 ### Math and reading scores by grade
+Replacing the ninth-graders scores affects the math and reading scores by grade simply by excluding the data for that column for that specific grade and that specific school. The data simply becomes Nan or null. All other data is left untouched for the other schools. Only Thomas High School is affected in the data that shows scores by grade. See images below. 
+![Math Grade Original](https://user-images.githubusercontent.com/73972332/102044478-ba489700-3d8b-11eb-869f-647a45655e86.png)
+![Math Grade Updated](https://user-images.githubusercontent.com/73972332/102044499-c2a0d200-3d8b-11eb-97dd-79cd75afb58f.png)
+![reading grade original](https://user-images.githubusercontent.com/73972332/102044509-c9c7e000-3d8b-11eb-9f53-e281e0c02bc0.png)
+![Reading Grade Updated](https://user-images.githubusercontent.com/73972332/102044523-d0565780-3d8b-11eb-967a-6c3fbf46ca2b.png)
 ### Scores by school spending
 ### Scores by school size
 ### Scores by school type
