@@ -3,26 +3,26 @@
 The purpose of this project is to conduct a school district analysis using Anaconda &amp; Jupyter Notebook. The data we are analyzing comes from two sources: one is a csv containing school data and another is a csv containing data on the students from those schools. The school data file contains information related to the school name, the type of school (whether Charter or District), the size of the school, and the budget of the school. The data on the students contains information such as their name, school, grade, and individual scores on math and reading. The common data between these two files is the "School Name" column. In this analysis we will load our data from the two csv's into dataframes to better visualize the data and sort and group the data, then we will merge the two datasets into one dataframe to find trends, view summaries, and sort by overall performance, math and reading scores, and school spending. We will also address an issue that was brought to light by the school board wherein there is evidence of academic dishonesty; specifically, that reading and math grades for Thomas High School ninth graders appear to have been altered. Therefore we will also clean the data and disregard those grades from Thomas High School ninth graders before conducting the final analysis. 
 
 # Results
-## How is the district summary affected?
+## 1. How is the district summary affected?
 The district summary is actually not affected much by the changes of replacing 9th grade Thomas High School Student Data with Nan because the District Summary DataFrame is not analyzing only data per student, but also analyzing data by overall school information such as total schools, total students, and total budget. The numbers that look at Average Scores, Passing Scores, and Overall Passing Scores are only slightly different in total. The very slight change that is a slight decrease in overall passing and average scores is likely due to the fact that when we exclude the data that was falsified (9th graders from Thomas High School), the average passing scores go down a little. These changes between the original and updated summary can be found below. 
 ### Original District Summary
 ![DS Original](https://user-images.githubusercontent.com/73972332/102035199-a9d8f200-3d74-11eb-8d20-82d0dbb06cc6.png)
 ### Refactored District Summary
 ![DS Updated](https://user-images.githubusercontent.com/73972332/102041632-d09f2480-3d84-11eb-88d3-dc60716dbb1c.png)
-## How is the school summary affected?
+## 2. How is the school summary affected?
 The school summary dataframe is affected in that after removing the false/altered data from the calculations, the scores drop overall for Thomas High School. When the falsified data was included, the scores were much higher for the percentage of those passing math, reading, and overall. When the data is excluded, the passing scores drop from the mid 90's to the mid 60's. This makes sense, given that the falsified/innacurate data would reflect a higher score overall and that the general scores would drop when the data is not counted. See the differences below in the two graphs (one for the original, and one that is filtered). 
 ### Original Per School Summary
 ![Per School Summary Original](https://user-images.githubusercontent.com/73972332/102043045-45279280-3d88-11eb-9e88-dcac11df71f9.png)
 ### Refactored Per School Summary
 ![Per School Summary Updated](https://user-images.githubusercontent.com/73972332/102043065-4f499100-3d88-11eb-9c9f-46e6e04694f4.png)
-## How does replacing the ninth graders’ math and reading scores affect Thomas High School’s performance relative to the other schools?
+## 3. How does replacing the ninth graders’ math and reading scores affect Thomas High School’s performance relative to the other schools?
 Replacing the ninth graders' math and reading scores with Nan values clearly affects Thomas High School's performance relative to the other schools by showing that Thoma High School's freshmen are relatively struggling. The scores drop clearly when the innacurate data is excluded. For example, in the original code, when we sorted by top 5 schools, Thomas High School actually came in rated second. However, when substituting Nan for the inaccurate values, Thomas High School's % overall passing drops down around 65%, bringing it's standing compared to the other schools, much lower. 
 ### Original Top Performing Schools
 ![sorted top 5 1](https://user-images.githubusercontent.com/73972332/102043729-0eeb1280-3d8a-11eb-9001-1564e215eba2.png)
 ### Thomas High School's % Passing after Excluding False Data
 ![Per School Summary Updated 3](https://user-images.githubusercontent.com/73972332/102043918-959fef80-3d8a-11eb-96d1-798c05ade94c.png)
-## How does replacing the ninth-grade scores affect the following: 
-### Math and reading scores by grade
+## 4. How does replacing the ninth-grade scores affect the following: 
+### 4A. Math and reading scores by grade
 Replacing the ninth-graders scores affects the math and reading scores by grade simply by excluding the data for that column for that specific grade and that specific school. The data simply becomes Nan or null. All other data is left untouched for the other schools. Only Thomas High School is affected in the data that shows scores by grade. See images below. 
 #### Math Original vs Updated
 ![Math Grade Original](https://user-images.githubusercontent.com/73972332/102044478-ba489700-3d8b-11eb-869f-647a45655e86.png)
@@ -31,6 +31,7 @@ Replacing the ninth-graders scores affects the math and reading scores by grade 
 ![reading grade original](https://user-images.githubusercontent.com/73972332/102044509-c9c7e000-3d8b-11eb-9f53-e281e0c02bc0.png)
 ![Reading Grade Updated](https://user-images.githubusercontent.com/73972332/102044523-d0565780-3d8b-11eb-967a-6c3fbf46ca2b.png)
 ### Scores by school spending
+Replacing the ninth-graders scores does not actually affect the scores by schools spending because by the time we run this code, we will have replaced the overall Thomas High School passing scores in the dataframe with data for only the 10th through 12th grade and will not even count the ninth graders data in this analysis. So the scores by school spending dataframe remains unchanged. If we had caclulated this data before updating the frame to only show for 10th through 12th, the school spend per student would be much higher. I noticed in this code, that our challenge didn't ask us to update the dataframe for total students at Thomas High School to show as only 1,173 (1635 - 461 ninth graders). If the code had asked us to update our dataframe for total students from Thomas High School to be only 1,173 (10th Grade to 12th Grade Only), then the total spend per student would be much higher at $889.28 and would bump this school way up on the spending range per student. 
 ### Scores by school size
 ### Scores by school type
 
