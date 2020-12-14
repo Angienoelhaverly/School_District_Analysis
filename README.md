@@ -5,6 +5,8 @@ The purpose of this project is to conduct a school district analysis using Anaco
 # Results
 ## How is the district summary affected?
 The district summary is actually not affected much by the changes of replacing 9th grade Thomas High School Student Data with Nan because the District Summary DataFrame is not analyzing only data per student, but also analyzing data by overall school information such as total schools, total students, and total budget. The numbers that look at Average Scores, Passing Scores, and Overall Passing Scores are only slightly different in total. The very slight change that is a slight decrease in overall passing and average scores is likely due to the fact that when we exclude the data that was falsified (9th graders from Thomas High School), the average passing scores go down a little. These changes between the original and updated summary can be found below. 
+### Code to replace 9th grade with NaN
+![replace](https://user-images.githubusercontent.com/73972332/102053799-2b447a80-3d9d-11eb-8afd-2bc4a907fd7d.png)
 ### Original District Summary
 ![DS Original](https://user-images.githubusercontent.com/73972332/102035199-a9d8f200-3d74-11eb-8d20-82d0dbb06cc6.png)
 ### Refactored District Summary
@@ -54,6 +56,8 @@ Major changes to the school district analysis after reading and math scores have
   3) the % Passing Math Scores for Thomas High School returned back up to 93 from 66.9 
   4) the % Passing Reading returned back up to 97 from 69.6 
   5) the overall percentage of the passing returned back up to 90 from 65. 
+#### Code where we replace DataFrame with values for only 10th-12th. 
+![final replace](https://user-images.githubusercontent.com/73972332/102053894-575ffb80-3d9d-11eb-87f1-4ff15fa4a323.png)
 #### Before replacing the math & reading scores
 ![Per School Summary Updated 2](https://user-images.githubusercontent.com/73972332/102052895-b886cf80-3d9b-11eb-973f-9d447b3749b8.png)
 #### After replacing the math & reading scores
