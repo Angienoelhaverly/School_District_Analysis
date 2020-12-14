@@ -8,7 +8,7 @@ The district summary is actually not affected much by the changes of replacing 9
 ### Original District Summary
 ![DS Original](https://user-images.githubusercontent.com/73972332/102035199-a9d8f200-3d74-11eb-8d20-82d0dbb06cc6.png)
 ### Refactored District Summary
-
+![DS Updated](https://user-images.githubusercontent.com/73972332/102041632-d09f2480-3d84-11eb-88d3-dc60716dbb1c.png)
 ## How is the school summary affected?
 ## How does replacing the ninth graders’ math and reading scores affect Thomas High School’s performance relative to the other schools?
 ## How does replacing the ninth-grade scores affect the following: 
